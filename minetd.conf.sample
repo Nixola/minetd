@@ -1,0 +1,9 @@
+// First subsidiary server
+server1.example.com 25566
+
+# Second subsidiary server
+server2.example.com 25567
+
+// Main server
+// Why's this at the bottom? Hell if I know.
+main.example.com    25568
