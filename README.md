@@ -6,7 +6,7 @@ It can currently only forward to `127.0.0.1`, though I'll probably add arbitrary
 I'm actually cheating and using `socat` under the hood to handle the actual proxying, so it's kind of required for this project to work.
 
 ## Usage
-Just run it, with the public port as the only argument.
+Just run it, with the public port as the only argument. Keep in mind that terminating `minetd` will also terminate all children, and thus all connections.
 `minetd <port number>`
 
 ## Configuration
@@ -16,3 +16,5 @@ Only the first found file is loaded.
 ### Syntax
 A valid configuration line is composed of a server's desired hostname, followed by any number of space characters (not tabs), followed by a port number, and it is, at most, 260 characters long.  
 Empty lines, or lines starting with `#` or `//`, are ignored.
+### Reloading
+The configuration can be reloaded, without terminating, by sending `minetd` a `SIGHUP`.
