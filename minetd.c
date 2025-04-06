@@ -10,7 +10,6 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <stdbool.h>
-#include <systemd/sd-daemon.h>
 #include <limits.h>
 
 #define PORT_LENGTH_MAX 5
