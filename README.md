@@ -6,7 +6,7 @@ It can currently only forward to `127.0.0.1`, though I'll probably add arbitrary
 I'm actually cheating and using `socat` under the hood to handle the actual proxying, so it's kind of required for this project to work.
 
 ## Usage
-Just run it, with the public port as the only argument. Keep in mind that terminating `minetd` will also terminate all children, and thus all connections.
+Just run it, with the public port as the only argument. Keep in mind that terminating `minetd` will also terminate all children, and thus all connections.  
 `minetd <port number>`
 
 ## Configuration
