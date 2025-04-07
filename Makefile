@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -Wextra -Wpedantic --std=c99 -lsystemd -lrt
+CFLAGS=-Wall -Wextra -Wpedantic --std=c99
 
 default: minetd
 
