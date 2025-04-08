@@ -1,6 +1,7 @@
 # minetd
-A minimal and transparent Minecraft reverse proxy. Useful if you've got more domains than ports, or can't be bothered to open multiple ports.  
-It can currently only forward to `127.0.0.1`, though I'll probably add arbitrary IP address support eventually.
+A minimal and ~~transparent~~ _kind of_ transparent Minecraft reverse proxy. Useful if you've got more domains than ports, or can't be bothered to open multiple ports.  
+It can currently only forward to `127.0.0.1`, though I'll probably add arbitrary IP address support eventually.  
+You _will_ want to avoid IP bans when using this, as everyone connecting via `minetd` will appear to have the same IP address. Unfortunately, I don't think there's a simple way around that.
 
 ## Dependencies
 I'm actually cheating and using `socat` under the hood to handle the actual proxying, so it's kind of required for this project to work.
