@@ -337,6 +337,9 @@ int main(int argc,char **argv){
             char *host = malloc(length+1);
             unsigned short port;
             host[length] = '\0';
+            if (host[length-1] == '.') { // Minecraft sends out a FQDN when resolving a SRV record
+                host[length-1] = '\0';
+            }
             strncpy(host, head+1, length);
             int found = 0;
             free(buffer);
